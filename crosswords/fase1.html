@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras Cruzadas</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="word1">
+            <input onkeyup="verificar()" id="c" maxlength="1" type="text">
+            <input onkeyup="verificar()" id="p" maxlength="1" type="text">
+            <input onkeyup="verificar()" id="u" maxlength="1" type="text">
+        </div>
+        <div id="word2">
+            <input onkeyup="verificar()" id="l" maxlength="1" type="text">
+            <input onkeyup="verificar()" id="a" maxlength="1" type="text">
+        </div>
+        <div id="word3">
+            <input onkeyup="verificar()" id="r" maxlength="1" type="text">
+            <input onkeyup="verificar()" id="m" maxlength="1" type="text">
+        </div>
+        <div id="proximo">
+            <p>Parabéns</p>
+            <p>Fase concluida</p>
+            <a href="fase2.html"><button>Próxima fase</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function verificar(params) {
+        //     if (c.value.length == 1) {
+        //     getElementById(u).focus()
+        // }
+        if (c.value == 'c' && p.value == 'p' && u.value == 'u') {
+            c.style.border = `green solid 2px`
+            p.style.border = `green solid 2px`
+            u.style.border = `green solid 2px`
+        } else {
+            c.style.border = ``
+            p.style.border = ``
+            u.style.border = ``
+        }
+        if (u.value == 'u' && l.value == 'l' && a.value == 'a') {
+            u.style.border = `green solid 2px`
+            l.style.border = `green solid 2px`
+            a.style.border = `green solid 2px`
+        } else {
+            //    u.style.border = `` 
+            l.style.border = ``
+            a.style.border = ``
+        }
+        if (r.value == 'r' && a.value == 'a' && m.value == 'm') {
+            r.style.border = `green solid 2px`
+            a.style.border = `green solid 2px`
+            m.style.border = `green solid 2px`
+        } else {
+            //    u.style.border = `` 
+            r.style.border = ``
+            m.style.border = ``
+        }
+        if (c.value == 'c' && p.value == 'p' && u.value == 'u' && l.value == 'l' && a.value == 'a' && r.value == 'r' && m.value == 'm') {
+            proximo.style.display = `flex`
+        }
+    }
+</script>

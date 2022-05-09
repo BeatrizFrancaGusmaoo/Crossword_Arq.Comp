@@ -1,0 +1,57 @@
+
+.container {
+    display: flex;
+    align-items: center;
+}
+input{
+    padding: 5px 5px;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 2px black solid;
+}
+#word2{
+    display:flex;
+    margin-left: 157px;
+    margin-top: 4px;
+    flex-direction: column;
+}
+#word2 #a {
+    margin-top: 4px;
+}
+#word3{
+    margin-left: 79px;
+    margin-top: -74px;
+}
+#word3 #m {
+    margin-left: 78px;
+    /* color: green
+    ; */
+}
+#proximo{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border: 2px green solid;
+    border-radius: 4px;
+    height: 150px;
+    width: 200px;
+    margin-left: 40%;
+    margin-top: -100px;
+
+}
+#proximo button {
+    color: blue;
+    width: 80px;
+    padding: 5px 10px ;
+    border: 2px rgb(161, 199, 26) solid;
+    background-color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    pointer-events: none;
+}
+#proximo a {
+    text-decoration: none;
+}
+
