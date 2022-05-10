@@ -5,8 +5,220 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+                .container {
+            display: flex;
+            align-items: center;
+        }
+        input{
+            padding: 5px 5px;
+            width: 60px;
+            height: 60px;
+            font-size: 50px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            border: 2px black solid;
+        }
+        #word4 {
+            display: flex;
+            margin-left: 16%;
+            margin-top: 23%;
+            
+        }
+        #word4 input {
+            margin-top: 4px;
+            
+        }
+        #word5{
+            display: flex;
+            flex-direction: column;
+            margin-left: 65.4%;
+            margin-top: -11.1%;
+
+        }
+        #word5 #m5 {
+            margin-top: 78px;
+        }
+        #word6 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 48.9%;
+            margin-top: -22.8%;
+        }
+        #word6 input{
+            margin-top: 4px;
+        }
+        #word6 #o6 {
+            margin-top: 78px;
+        }
+        #word7 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 37.9%;
+            margin-top: -34.35%;
+        }
+        #word7 input{
+            margin-top: 4px;
+        }
+        #word7 #h7 {
+            margin-top: 78px;
+        }
+        #word8 {
+            margin-left: 81.8%;
+            margin-top: -16.75%;
+        }
+        #proximo{
+            display: none;
+            align-items: center;
+            flex-direction: column;
+            border: 2px green solid;
+            border-radius: 4px;
+            height: 150px;
+            width: 200px;
+            margin-left: 40%;
+            margin-top: -100px;
+            background-color: bisque;
+            position: absolute;
+
+        }
+        #proximo button {
+            color: blue;
+            width: 80px;
+            padding: 5px 10px ;
+            border: 2px rgb(161, 199, 26) solid;
+            background-color: yellow;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            pointer-events: none;
+        }
+        #proximo a {
+            text-decoration: none;
+        }
+
+    </style>
 </head>
 <body>
-    fase 2
+    <div id="word4">
+        <input onkeyup="verificar()" id="r4" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="e4" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="g4" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="i4" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="s4" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="t4" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="r24" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="a4" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="d4" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="o4" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="r34" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="e24" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="s24" maxlength="1" type="text">
+    </div>
+    <div id="word5">
+        <input onkeyup="verificar()" id="r5" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="m5" maxlength="1" type="text">
+    </div>
+    <div id="word6">
+        <input onkeyup="verificar()" id="e6" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="p6" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="o6" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="m6" maxlength="1" type="text">
+    </div>
+    <div id="word7">
+        <input onkeyup="verificar()" id="f7" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="l7" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="a7" maxlength="1" type="text">
+        <input onkeyup="verificar()" id="h7" maxlength="1" type="text">
+    </div>
+    <div id="word8">
+        <input onkeyup="verificar()" id="c8" maxlength="1" type="text">
+    </div>
+    <div id="proximo">
+        <p>Parabéns</p>
+        <p>Fase concluida</p>
+        <a href="fase3.html"><button>Próxima fase</button></a>
+    </div>
+
 </body>
 </html>
+<script>
+    function verificar(params) {
+        
+    
+                if (r4.value == 'r' && e4.value == 'e' && g4.value == 'g' && i4.value == 'i' && s4.value == 's' && t4.value == 't' && r24.value == 'r' && a4.value == 'a' && d4.value == 'd' && o4.value == 'o' && r34.value == 'r' && e24.value == 'e' && s24.value == 's') {
+            r4.style.border = `green solid 2px` 
+            e4.style.border = `green solid 2px` 
+            g4.style.border = `green solid 2px`
+            i4.style.border = `green solid 2px`
+            s4.style.border = `green solid 2px`
+            t4.style.border = `green solid 2px`
+            r24.style.border = `green solid 2px`
+            a4.style.border = `green solid 2px`
+            d4.style.border = `green solid 2px`
+            o4.style.border = `green solid 2px`
+            r34.style.border = `green solid 2px`
+            e24.style.border = `green solid 2px`
+            s24.style.border = `green solid 2px` 
+            }else {
+            r4.style.border = `` 
+            e4.style.border = `` 
+            g4.style.border = ``
+            i4.style.border = ``
+            s4.style.border = ``
+            t4.style.border = ``
+            r24.style.border = ``
+            a4.style.border = ``
+            d4.style.border = ``
+            o4.style.border = ``
+            r34.style.border = ``
+            e24.style.border = ``
+            s24.style.border = ``
+            }
+            if (r5.value == 'r' && o4.value == 'o' && m5.value == 'm') {
+            r5.style.border = `green solid 2px` 
+            o4.style.border = `green solid 2px` 
+            m5.style.border = `green solid 2px` 
+            }else {
+            //    u.style.border = `` 
+            r5.style.border = `` 
+            m5.style.border = ``  
+            }
+            if (e6.value == 'e' && p6.value == 'p' && r24.value == 'r' && o6.value == 'o' && m6.value == 'm') {
+            e6.style.border = `green solid 2px` 
+            p6.style.border = `green solid 2px` 
+            r24.style.border = `green solid 2px`
+            o6.style.border = `green solid 2px` 
+            m6.style.border = `green solid 2px` 
+            }else {
+            //    u.style.border = `` 
+            e6.style.border = `` 
+            p6.style.border = `` 
+            o6.style.border = `` 
+            m6.style.border = ``   
+            }
+            if (f7.value == 'f' && l7.value == 'l' && a7.value == 'a' && s4.value == 's' && h7.value == 'h') {
+            f7.style.border = `green solid 2px` 
+            l7.style.border = `green solid 2px` 
+            a7.style.border = `green solid 2px`
+            s4.style.border = `green solid 2px` 
+            h7.style.border = `green solid 2px` 
+            }else {
+            //    u.style.border = `` 
+            f7.style.border = `` 
+            l7.style.border = `` 
+            a7.style.border = `` 
+            h7.style.border = ``   
+            }
+            if (c8.value == 'c' && s24.value == 's') {
+            c8.style.border = `green solid 2px` 
+            s24.style.border = `green solid 2px` 
+            }else {
+            //    u.style.border = `` 
+            c8.style.border = `` 
+            s24.style.border = ``  
+            }
+            if (r4.value == 'r' && e4.value == 'e' && g4.value == 'g' && i4.value == 'i' && s4.value == 's' && t4.value == 't' && r24.value == 'r' && a4.value == 'a' && d4.value == 'd' && o4.value == 'o' && r34.value == 'r' && e24.value == 'e' && s24.value == 's' && e6.value == 'e' && p6.value == 'p' && o6.value == 'o' && m6.value == 'm' && r5.value == 'r' && m5.value == 'm' && f7.value == 'f' && l7.value == 'l' && a7.value == 'a' && h7.value == 'h' && c8.value == 'c' ) {
+                proximo.style.display = `flex`
+            }
+            
+
+    }
+</script>
